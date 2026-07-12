@@ -63,6 +63,14 @@ export default {
           fair: "hsl(var(--rating-fair))",
           poor: "hsl(var(--rating-poor))",
         },
+        viral: {
+          accent: "hsl(var(--viral-accent))",
+          "accent-foreground": "hsl(var(--viral-accent-foreground))",
+          danger: "hsl(var(--viral-danger))",
+          warning: "hsl(var(--viral-warning))",
+          stage: "hsl(var(--viral-stage))",
+          track: "hsl(var(--viral-track))",
+        },
       },
       backgroundImage: {
         "gradient-primary": "var(--gradient-primary)",
@@ -98,6 +106,10 @@ export default {
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
+        "viral-scan": "viral-scan 2.6s ease-in-out infinite",
+        "viral-shimmer": "viral-shimmer 1.6s infinite",
+        "viral-pulse": "viral-pulse 1.8s ease-in-out infinite",
+        "viral-flicker": "viral-flicker 2.2s ease-in-out infinite",
       },
     },
   },
