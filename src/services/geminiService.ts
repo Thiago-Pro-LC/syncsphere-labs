@@ -1,5 +1,12 @@
-const GEMINI_API_KEY = 'AIzaSyBMKcougMGpQ49s9kkqgjIkvktLWEDG4ok';
+const GEMINI_API_KEY = import.meta.env.VITE_GEMINI_API_KEY;
 const GEMINI_API_URL = 'https://generativelanguage.googleapis.com/v1beta/models/gemini-pro:generateContent';
+
+if (!GEMINI_API_KEY) {
+  console.warn(
+    'VITE_GEMINI_API_KEY não configurada. Defina-a no arquivo .env (veja .env.example). ' +
+    'A análise por IA usará respostas de fallback até que a chave seja fornecida.'
+  );
+}
 
 export interface BusinessAnalysis {
   digitalPresenceScore: number;
